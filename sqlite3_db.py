@@ -37,7 +37,7 @@ def insert(item,qty,price):
     conn = sqlite3.connect("lite.db")
     cur = conn.cursor()
 
-    # Avoiding SQL injection attacks
+    # Avoiding SQL injection attacks with placeholders
     cur.execute("""
         INSERT INTO store VALUES (
             ?,
@@ -66,6 +66,20 @@ def view():
     return rows
 
 
+def update(item,qty,price):
+    """
+    Function to update a database table rows using SQL
+    """
+    conn = sqlite3.connect("lite.db")
+    cur = conn.cursor()
+    cur.execute("""
+        UPDATE store SET quantity = ?, price = ? WHERE item = ?;
+        """, (qty, price, item)
+    )
+    conn.commit()
+    conn.close()
+
+
 def delete(item):
     """
     Function to delete database table rows using SQL
@@ -80,19 +94,6 @@ def delete(item):
     conn.commit()
     conn.close()
 
-
-def update(item,qty,price):
-    """
-    Function to update a database table rows using SQL
-    """
-    conn = sqlite3.connect("lite.db")
-    cur = conn.cursor()
-    cur.execute("""
-        UPDATE store SET quantity = ?, price = ? WHERE item = ?;
-        """, (qty, price, item)
-    )
-    conn.commit()
-    conn.close()
 
 create_table()
 # insert("Wine Glass",8,6.5)
