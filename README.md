@@ -30,7 +30,7 @@ This coding example is part of a Udemy Python course using Python to interact wi
 
 ## Deployment ##
 
-The website was developed using Gitpod using Git pushed to GitHub, which hosts the repository. I made the following steps to deploy the site:
+The website was developed using VS Code & Git pushed to GitHub, which hosts the repository. I made the following steps to deploy the site:
 
 ### **Cloning Python-Databases from GitHub** ###
 
@@ -41,6 +41,7 @@ Ensure the following are installed locally on your computer:
 - [Python 3.6 or higher](https://www.python.org/downloads/)
 - [PIP3](https://pypi.org/project/pip/) Python package installer
 - [Git](https://git-scm.com/) Version Control
+- [PostgreSQL](https://www.postgresql.org/)
 
 #### **Cloning the GitHub repository** ####
 
