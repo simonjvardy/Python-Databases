@@ -15,16 +15,28 @@ This coding example is part of a Udemy Python course using Python to interact wi
 - [Python3](https://www.python.org/)
   - Used to create the main application functionality
 
-### **Libraries / Packages** ###
+### **Libraries / Packages / Modules** ###
+
+- [configparser](https://docs.python.org/3/library/configparser.html)
+  - Used to parse the database.ini file config data for PostgreSQL database connection
+
+- [psycopg2](https://www.psycopg.org/docs/)
+  - Used to connect Python with PostgreSQL
+
+### **Databases** ###
 
 - [sqlite3]()
-  - Used to
+  - Local .db file created using the Python sqlite3 module
 
-- [PostgreSQL]()
-  - Used to
+- [PostgreSQL](https://www.postgresql.org/)
+  - Open source relational database installed locally
 
-- [psycopg2]()
-  - Used to connect Python with PostgreSQL
+### **Tools** ###
+
+- [VS Code](https://code.visualstudio.com/)
+  - Code Editor
+- [pgAdmin4](https://www.pgadmin.org/)
+  - Open source PostgreSQL admin & development platform
 
 ---
 
