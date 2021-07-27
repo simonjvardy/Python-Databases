@@ -1,10 +1,10 @@
-# This Python script connects to a PostgreSQL database and utilizes Pandas to obtain data and create a data frame
-# A initialization and configuration file is used to protect the author's login credentials
+# This Python script connects to a PostgreSQL database
+# An initialization and configuration file is used to protect the author's login credentials
 
 import psycopg2
 
 # Import the 'config' function from the config.py file
-from config import config
+from config_pg import config
 
 # Obtain the configuration parameters
 params = config()
@@ -103,9 +103,9 @@ def delete(item):
 
 
 create_table()
-# insert("Wine Glass",8,6.5)
-# insert("Water Glass",10,4.99)
-# insert("Coffee Cup",25,3.99)
+insert("Wine Glass",8,6.5)
+insert("Water Glass",10,4.99)
+insert("Coffee Cup",25,3.99)
 delete("Wine Glass")
 update("Coffee Cup",30,4.99)
 print(view())
