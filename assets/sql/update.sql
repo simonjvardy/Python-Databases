@@ -1,0 +1,1 @@
+UPDATE store_new SET quantity = %s, price = %s WHERE item = %s;

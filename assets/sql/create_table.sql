@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS store_new (item TEXT,quantity INTEGER,price REAL);

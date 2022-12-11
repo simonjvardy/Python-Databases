@@ -25,7 +25,7 @@ This coding example is part of a Udemy Python course using Python to interact wi
 
 ### **Databases** ###
 
-- [sqlite3]()
+- [sqlite3](https://docs.python.org/3/library/sqlite3.html)
   - Local .db file created using the Python sqlite3 module
 
 - [PostgreSQL](https://www.postgresql.org/)
